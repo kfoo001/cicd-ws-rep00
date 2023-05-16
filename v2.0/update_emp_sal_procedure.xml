@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+	<changeSet id="dc36bb9bbb2e4536987090f31499760285a5c035" author="(SCOTT)-Generated" failOnError="false"   runOnChange="true" runAlways="false"  >
+		<n0:createOracleProcedure objectName="UPDATE_EMP_SAL" objectType="PROCEDURE" ownerName="SCOTT"  replaceIfExists="true" >
+			<n0:source><![CDATA[CREATE OR REPLACE EDITIONABLE PROCEDURE "SCOTT"."UPDATE_EMP_SAL" (p_sal number) AS
+begin
+update emp set sal = p_sal;
+END;
+/]]></n0:source>
+		</n0:createOracleProcedure>
+	</changeSet>
+</databaseChangeLog>

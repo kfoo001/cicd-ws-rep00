@@ -41,8 +41,8 @@ synonyms                       : false
         xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-  <include file="dept_table.xml"/> 
-  <include file="bonus_table.xml"/> 
-  <include file="salgrade_table.xml"/> 
-  <include file="emp_table.xml"/> 
+  <include file="./dept_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./bonus_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./salgrade_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_table.xml" relativeToChangelogFile="true"/> 
 </databaseChangeLog> 
